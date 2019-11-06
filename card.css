@@ -1,0 +1,130 @@
+/* CARDS SECTION [RIGHT] */
+
+.card {
+    color: #2e435e;
+    position: relative;
+    width: 210px;
+    height: 300px;
+    box-shadow: 6px 9px 35px rgba(25, 40, 66, 0.1);
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 65px 30px 35px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in;
+    margin-bottom: 61px;
+}
+
+.card:hover {
+    box-shadow: 4px 7px 32px rgba(235, 90, 56, 0.52);
+    background-color: #eb5238;
+    color: #ffffff;
+}
+
+.card:hover .card-circle {
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.card:hover .card-circle-inner {
+    background: #ffffff;
+}
+
+.card:hover .card-circle .svg-path {
+    fill: #0d3e60;
+    transition: all 0.4s ease-in;
+}
+
+.card:hover .icon-read-more {
+    fill: #fff;
+    transition: all 0.4s ease-in;
+}
+
+.card-circle .svg-path {
+    fill: #fff;
+}
+
+.card__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+.card__content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card__read-more {
+    margin-top: auto;
+    display: flex;
+    position: relative;
+    height: 20px;
+}
+
+.card__read-more-link {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.6s ease-in;
+    position: relative;
+}
+
+.card:hover .card__read-more-link {
+    left: 130px;
+}
+
+.card__read-more-text {
+    padding-right: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    text-align: right;
+    height: 11px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0;
+    transform: translateX(-100%)
+}
+
+.card:hover .card__read-more-text {
+    opacity: 1;
+}
+
+.card-circle {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 76px;
+    height: 76px;
+    border-radius: 50px;
+    background-color: rgba(235, 82, 56, .2);
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in;
+}
+
+.card-circle-inner {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-color: #eb5238;
+    border-radius: 50px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in;
+}
+
+.icon-read-more {
+    fill: #fff9df;
+}
